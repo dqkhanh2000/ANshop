@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ANSHOP</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="../../vendors/css/bootstrap.min.css">
+    <script src="../..//vendors/js/popper.min.js"></script>
+    <script src="../../vendors/js/bootstrap.bundle.js"></script>
+    <script src="../../vendors/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../../vendors/js/zoomple.js"></script>
+    
+    <link rel="stylesheet" href="../../vendors/css/zoomple.css">
+    <link rel="stylesheet" href="../../resources/css/detail.css">
+    <link rel="stylesheet" href="../../resources/css/product.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css">
+</head>
+
+<body>
+    <div class="alert alert-success" role="alert">
+    </div>
+    <div class="container-full" style="margin-top: -5px; width: 100% !important; z-index: 1;">
+        <!-------------header------------->
+        <div class="header">
+                <nav class="navmenu">
+                    <a href="./index.html"><img src="../img/logo.png" alt="" class="logo"></a>
+                    <i class="fal fa-bars fa-2x icon-menu"></i>
+                    <div class="menu-right">
+    
+                        <div class="user dropdown">
+                            <a href="#" class=""><i class="fal fa-user fa-lg"></i></a>
+                            <div class="box-user box-dropdown">
+                                <div class="title">
+                                    <h5 class="login-title ">Đăng nhập</h5>
+                                    <h5 class="signup-title right-hide">Đăng ký</h5>
+                                </div>
+    
+                                <div class="clearfix"></div>
+                                <div class="login-form">
+                                    <div class="form-group">
+                                        <label for="username">Email:</label>
+                                        <input type="email" class="form-control" name="" id="" aria-describedby="helpId"
+                                            placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username">Mật khẩu:</label>
+                                        <input type="password" class="form-control" name="" id="" aria-describedby="helpId"
+                                            placeholder="">
+                                        <button type="button" name="" id="btn-login" class="btn btn-primary">Đăng nhập</button>
+                                    </div>
+                                    <span>Hoặc đăng nhập với<br></span>
+                                    <a href="https://vi-vn.facebook.com/login/"><i
+                                            class="fab fa-facebook-f facebook"></i></a>
+                                    <a href="https://accounts.google.com/Login?%2F"><i class="fab fa-google google"></i></a>
+    
+                                </div>
+                                <div class="signup-form">
+                                    <div class="form-group">
+                                        <label for="username">Email:</label>
+                                        <input type="email" class="form-control" name="" id="" aria-describedby="helpId"
+                                            placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username">Mật khẩu:</label>
+                                        <input type="password" class="form-control" name="" id="" aria-describedby="helpId"
+                                            placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username">Nhập lại mật khẩu:</label>
+                                        <input type="password" class="form-control" name="" id="" aria-describedby="helpId"
+                                            placeholder="">
+                                        <button type="button" name="" id="btn-signup" class="btn btn-primary">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cart dropdown">
+                            <a href="./cart.html">
+                                <i class="fal fa-shopping-cart fa-lg"></i>
+                            </a>
+                            <div class="cart-dropdown box-dropdown">
+                                <ul class="cart-list">
+                                    <span class="title">Sản phẩm đã chọn:</span>
+                                    <li class="item-cart">
+                                        <img src="../img/sanpham/nu/aosomixanh/1s.jpg" alt="" class="cartimg">
+                                        <div class="info-item">
+                                            <span class="name"><a href="./detail.html">Áo sơ mi nữ sọc xanh</a></span>
+                                            <span class="cost">300.000 đ</span>
+                                            <span class="quantity">SL: 1</span>
+                                            <i class="fal fa-trash-alt fa-lg delete "></i>
+                                        </div>
+                                    </li>
+    
+                                    <li class="item-cart">
+                                        <img src="../img/sanpham/nu/aogucci3soc/1.jpg" alt="" class="cartimg">
+                                        <div class="info-item">
+                                            <span class="name"><a href="./detail.html" class="detail">Áo GUCCI quốc dân</a></span>
+                                            <span class="cost">300.000 đ</span>
+                                            <span class="quantity">SL: 1</span></span>
+                                            <i class="fal fa-trash-alt fa-lg delete "></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="total-cost">
+                                        <span>Tổng cộng:</span>
+                                        <span class="money">300.000 đ</span>
+                                    </div>
+    
+                                    <a name="" id="" class="btn btn-warning btn-pay" href="./cart.html" role="button">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <a href="./product.html">
+                                <i class="fal fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                        <div class="search">
+                            <input type="text" class="form-control search-bar" placeholder="Tìm kiếm">
+                            <a href="./product.html" class="icon-show"><i class="fal fa-search fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <ul class="navbar">
+                        <li class="nav-item dropdown">
+                            <i class="fal fa-plus fa-sm icon-expand dropdown"></i>
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Nam</span>
+                            </a>
+                            <div class="menu-dropdown box-dropdown">
+                                <div class="img-dropdown fluid">
+                                    <img class="img-fluid" src="../img/menu-nam.png" alt="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <ul>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Áo khoác</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Áo thun</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Áo sơ mi</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Quần jean</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Quần short</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item dropdown">
+                                <i class="fal fa-plus fa-sm icon-expand"></i>
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Nữ</span>
+                            </a>
+                            <div class="menu-dropdown box-dropdown">
+                                <div class="img-dropdown fluid">
+                                    <img class="img-fluid" src="../img/menu-nu.png" alt="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <ul>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Áo khoác</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Áo thun</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Áo sơ mi</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Đầm</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Quần-váy</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item dropdown">
+                                <i class="fal fa-plus fa-sm icon-expand"></i>
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Thể thao</span>
+                            </a>
+                            <div class="menu-dropdown box-dropdown">
+                                <div class="img-dropdown fluid">
+                                    <img class="img-fluid" src="../img/menu-sport.png" alt="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <ul>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Thể thao nam</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Thể thao nữ</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Thể thao trẻ em</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                                <i class="fal fa-plus fa-sm icon-expand"></i>
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Giày dép</span>
+                            </a>
+                            <div class="menu-dropdown box-dropdown">
+                                <div class="img-dropdown fluid">
+                                    <img class="img-fluid" src="../img/menu-sport.png" alt="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <ul>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Giày dép nam</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Giày dép nữ</span></a>
+                                        </li>
+                                        <li class="drop-item">
+                                            <a href="./product.html" class="title-item"><span>Giày dép trẻ em</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Phụ kiện</span>
+                            </a>
+                        </li>
+                        <li class="nav-item lg-hide">
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Quà</span>
+                            </a>
+                        </li>
+                        <li class="nav-item lg-hide">
+                            <a class="title" href="./product.html" target="_self">
+                                <span>Sản phẩm mới</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="clearfix space"></div>
+
+        <!--------link-bar---------->
+        <div class="link-page">
+            <a href="./index.html">Trang chủ</a>
+            <span class="flash">/</span>
+            <a href="./product.html">Nữ</a>
+            <span class="flash">/</span>
+            <a href="./product.html">Áo sơ mi nữ sọc xanh</a>
+        </div>
+        <!--------detail---------->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-1">
+                    <ul id='carousel-custom-dots' class='owl-detail-dots'>
+                        <li class='owl-dot'><img src="../img/sanpham/nu/aosomixanh/1.jpg" alt=""></li>
+                        <li class='owl-dot'><img src="../img/sanpham/nu/aosomixanh/2.jpg" alt=""></li>
+                        <li class='owl-dot'><img src="../img/sanpham/nu/aosomixanh/3.jpg" alt=""></li>
+                        <li class='owl-dot'><img src="../img/sanpham/nu/aosomixanh/4.jpg" alt=""></li>
+                        <li class='owl-dot'><img src="../img/sanpham/nu/aosomixanh/5.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-lg-11 col-12 row">
+                    <div class="col-lg-5 col-md-5 col-12 float-left">
+                        <div class="slide-detail">
+                            <div class="fadeOut owl-carousel owl-theme carousel-detail">
+                                <div class="item">
+                                    <a href="../img/sanpham/nu/aosomixanh/1.jpg" class="zoomple" title="hm"><img
+                                            src="../img/sanpham/nu/aosomixanh/1.jpg" alt="" /> </a>
+                                </div>
+                                <div class="item">
+                                    <a href="../img/sanpham/nu/aosomixanh/2.jpg" class="zoomple" title="hm">
+                                        <img src="../img/sanpham/nu/aosomixanh/2.jpg" alt="" /> </a>
+                                </div>
+                                <div class="item">
+                                    <a href="../img/sanpham/nu/aosomixanh/3.jpg" class="zoomple" title="hm">
+                                        <img src="../img/sanpham/nu/aosomixanh/3.jpg" alt="" /> </a>
+                                </div>
+                                <div class="item">
+                                    <a href="../img/sanpham/nu/aosomixanh/4.jpg" class="zoomple" title="hm">
+                                        <img src="../img/sanpham/nu/aosomixanh/4.jpg" alt="" /> </a>
+                                </div>
+                                <div class="item">
+                                    <a href="../img/sanpham/nu/aosomixanh/5.jpg" class="zoomple" title="hm">
+                                        <img src="../img/sanpham/nu/aosomixanh/5.jpg" alt="" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-12 float-left detail">
+                        <h4>Áo sơ mi nữ sọc xanh</h4>
+                        <span class="price">300.000 đ</span>
+                        <h6>Mô tả</h6>
+                        <p>Một sản phẩm dành cho những cô gái. Hiện Đại yêu thích sự Năng Động phá cách nhưng vẫn không
+                            kém phần thời trang.
+                            Áo sơmi với form Croptop, tay loe xoắn vạt ở tay Sành Điệu, dễ dàng giúp nàng diện đi làm,
+                            đi học hoặc dạo phố cùng bè bạn vào những buổi cuối tuần.</p>
+                        <div class="clearfix"></div>
+                        <h6>Chọn màu</h6>
+                        <ul class="list color">
+                            <li class="rounded-circle active" style="background:#007ff0"></li>
+                            <li class="rounded-circle"
+                                style="background:#ffffff; border: 1px solid rgb(165, 165, 165);"></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <h6>Chọn size</h6>
+                        <ul class="list">
+                            <li class="active" style="background:#ffffff"><span>S</span></li>
+                            <li class="" style="background:#ffffff"><span>M</span></li>
+                            <li class="" style="background:#ffffff"><span>L</span></li>
+                            <li class="" style="background:#ffffff"><span>XL</span></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <h6>Số lượng</h6>
+                        <input type="number" class="quantity-num" min="1" value="1" name="" id="">
+                        <div class="clearfix"></div>
+                        <input name="" id="" class="btn add-cart" type="button" value="Thêm vào giỏ hàng">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------sp-tuong-tu -->
+        <div class="product">
+                <a href="./product.html"><h3 class="product-title">Sản phẩm tương tự</h3></a>
+            <div class="product-row">
+                <div class="product-slide">
+                    <div class="control">
+                        <div class="pre no-pre">
+                            <i class="fal fa-angle-left fa-3x "></i>
+                        </div>
+                        <div class="next">
+                            <i class="fal fa-angle-right fa-3x"></i>
+                            <a href="./product.html" class="more" style="display: none">Thêm</a>
+                        </div>
+                    </div>
+                    <div class="fadeOut owl-carousel owl-theme carousel-product">
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/nu/aogucci3soc/1.jpg)">
+                                </div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Áo GUCCI quốc dân</a>
+                                    <span>300.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/so-mi-nu.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <div class="sale">
+                                    <span>-50%</span>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="clearfix"></div>
+                                <div class="name">
+                                    <a href="#">Áo sơ mi nữ sọc xanh</a>
+                                    <span>300.000 đ</span>
+                                    <strike>600.000 đ</strike>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/ao-so-mi-den.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Áo sơ mi vằn nam</a>
+                                    <span>1.300.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img"
+                                    style="background-image: url(../img/sanpham/ao-so-mi-han-quoc-trang.jpg)">
+                                </div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <div class="sale">
+                                    <span>-10%</span>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Áo sơ mi trắng nam</a>
+                                    <span>500.000 đ</span>
+                                    <strike>555.000 đ</strike>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/ao-vest.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <div class="sale">
+                                    <span>-20%</span>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Vest trắng nam</a>
+                                    <span>4.300.000 đ</span>
+                                    <strike>5.375.000 đ</strike>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/dam.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Đầm nữ sọc đen vàng</a>
+                                    <span>450.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/thun-nam.png)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <div class="sale">
+                                    <span>-20%</span>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Áo T-Shirt Caro đen đỏ nam</a>
+                                    <span>250.000 đ</span>
+                                    <strike>312.000 đ</strike>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/thun-nu.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Áo T-Shirt nữ hồng cá tính</a>
+                                    <span>235.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/giay3.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Giày Prophere Xám / Cam</a>
+                                    <span>2.100.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/giay2.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Giày Balenciaga Trắng / Xám</a>
+                                    <span>25.000.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-item">
+                                <div class="img" style="background-image: url(../img/sanpham/thun-nu2.jpg)"></div>
+                                <div class="icon">
+                                    <i class="fal fa-heart fa-2x add-list-favorite"></i>
+                                    <i class="fal fa-cart-plus fa-2x add-cart"></i>
+                                </div>
+                                <a href="#" class="detail">Chi tiết</a>
+                                <div class="name">
+                                    <a href="#">Áo T-Shirt nữ trắng</a>
+                                    <span>600.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------Footer---------->
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+                <div class="container text-center text-md-left">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
+                            <img src="../img/logo-white.png" alt="" class="img-fluid">
+                            <p>ANSHOP là shop bán quần áo uy tín, chất lượng, an toàn.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident
+                                voluptate.</p>
+    
+                        </div>
+                        <hr class="clearfix w-100 d-md-none">
+                        <div class="col-md-3 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+                            <h5 class="text-uppercase mb-4">Chính sách</h5>
+    
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                       <a href="./404.html">Chính sách vận chuyển</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                       <a href="./404.html">Chính sách thanh toán</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                       <a href="./404.html">Chính sách đổi trả</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                       <a href="./404.html">Bảo mật thông tin</a>
+                                    </p>
+                                </li>
+                            </ul>
+    
+                        </div>
+    
+                        <hr class="clearfix w-100 d-md-none">
+    
+                        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+                            <h5 class="font-weight-bold text-uppercase mb-4">Địa chỉ</h5>
+    
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                        <i class="fas fa-home mr-2"></i>Quận Ngũ Hành Sơn, Đà nẵng</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fas fa-envelope mr-2"></i> anshop@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fas fa-phone mr-2"></i> 1800 1800</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fas fa-print mr-2"></i> 01234 567 88</p>
+                                </li>
+                            </ul>
+    
+                        </div>
+    
+                        <hr class="clearfix w-100 d-md-none">
+    
+                        <div class="col-md-2 col-lg-2 text-center mx-auto my-4 social">
+    
+                            <h5 class="font-weight-bold text-uppercase mb-4">Follow us</h5>
+    
+                            <a type="button" class="btn-floating mx-auto mt-3 btn-fb" href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+    
+                            <a type="button" class="btn-floating mx-auto mt-3 btn-yt"  href="https://www.youtube.com/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+    
+                            <a type="button" class="btn-floating mx-auto mt-3 btn-gg"  href="https://www.google.com/">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile"></div>
+        </footer>
+        <script>
+            $('.zoomple').zoomple({
+                blankURL: 'images/blank.gif',
+                bgColor: '#90D5D9',
+                loaderURL: 'images/loader.gif',
+                offset: { x: -150, y: -150 },
+                zoomWidth: 300,
+                zoomHeight: 300,
+                roundedCorners: true
+            });
+        </script>
+</body>
+
+</html>
